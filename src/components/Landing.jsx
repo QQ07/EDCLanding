@@ -63,7 +63,6 @@
 
 
 import React from 'react'
-import { Transition } from '@headlessui/react';
 import logo from '../assets/logo.png';
 import money from '../assets/money.png'
 import briefcase from '../assets/briefcase.png'
@@ -85,12 +84,7 @@ const Landing = () => {
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <div className="w-full max-w-xl p-8 mx-auto">
 
-        <Transition
-          show={isOpen} 
-          enter="transition-opacity duration-1000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-        >
+       
           <div className="flex flex-col items-center justify-center space-y-4">
             <img src={logo} alt="Logo" className="-mt-28 z-40 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-[20rem] h-[20rem]" />
             <h1 className="text-4xl font-bold pl-28 -mt-4 text-blond z-40">Entrepreneurship Development Cell</h1>
@@ -101,7 +95,7 @@ const Landing = () => {
         <img className="bbutton icon-logo2" src={briefcase} alt="a small briefcase logo" />
         <img className="bbutton icon-logo3" src={bulb} alt="a small bulb logo" />
         <img className="bbutton icon-logo4" src={rocket} alt="a small rocket logo" />
-        </Transition>
+
       </div>
     </div>
       </div>
