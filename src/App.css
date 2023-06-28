@@ -1,0 +1,127 @@
+/* li {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    color: #F7F7F7;
+    text-decoration: none;
+    }
+    
+    li::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        width: 0;
+        height: 2px;
+        border-bottom: 2px solid #F7F7F7;
+        transition: all 0.3s linear;
+    }
+    
+    li, li::after {
+    transition: all 0.3s linear;
+    }
+    
+    li:hover {
+    color: #F7F7F7;
+    }
+    
+    li:hover::after {
+        left: 30%;
+        width: 50%;
+    } */
+
+li:hover {
+  color: #e9e1e192;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px 2px #d8b206cf; */
+}
+
+.gradient {
+  background: rgb(24, 24, 153);
+  background: linear-gradient(
+    270deg,
+    rgba(24, 24, 153, 1) 0%,
+    rgba(10, 10, 56, 1) 50%,
+    rgba(24, 24, 153, 1) 100%
+  );
+}
+.bg-gradient {
+  background: rgb(58, 58, 150);
+  background: radial-gradient(
+    circle at 50% -50%,
+    rgba(58, 58, 150, 1) 1%,
+    rgba(9, 9, 55, 1) 33%,
+    rgba(24, 24, 153, 1) 65%
+  );
+}
+
+.bbutton {
+  text-decoration: none;
+  background: linear-gradient(
+    to top right,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 4em;
+  animation: hover 3.5s ease-in-out infinite;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-shadow: -2px 2px rgba(31, 31, 31, 0.4);
+}
+
+.icon-logo1 {
+  position: absolute;
+
+  bottom: 60%;
+  right: 7%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.icon-logo2 {
+  position: absolute;
+
+  bottom: 60%;
+  right: 87%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.icon-logo3 {
+  position: absolute;
+
+  bottom: 17%;
+  right: 79%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.icon-logo4 {
+  position: absolute;
+  bottom: 17%;
+  right: 13%;
+  height: 7rem;
+  width: 7rem;
+}
+
+@keyframes hover {
+  0% {
+    transform: rotate(-5deg) translatey(0px);
+  }
+
+  50% {
+    transform: rotate(-3deg) translatey(7px);
+  }
+
+  100% {
+    transform: rotate(-5deg) translatey(0px);
+  }
+}
